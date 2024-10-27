@@ -1,0 +1,47 @@
+body {
+  background-color: #d5dceb;
+}
+
+h1 {
+  font-family: Rowdies;
+  font-size: 30px;
+  color: #F24052ff;
+  text-align: center;
+}
+
+p {
+  font-family: Poppins;
+  color: Navy;
+  font-size: 15px;
+  align: center;
+  padding: 5px 15px;
+}
+
+ul {
+  background-color: #1688c7
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  border: 1px #1688c7;
+  border-radius: 5px;
+  display: block;
+  color: white;
+  font-family: Poppins;
+  font-size: 15px;
+  background-color: #1688c7;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: Navy;
+}
