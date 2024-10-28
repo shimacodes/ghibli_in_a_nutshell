@@ -1,47 +1,152 @@
 body {
-  background-color: #d5dceb;
+  background-color: #e5ebecff;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:100vh;
 }
 
-h1 {
-  font-family: Rowdies;
-  font-size: 30px;
-  color: #F24052ff;
-  text-align: center;
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
 }
 
-p {
-  font-family: Poppins;
-  color: Navy;
-  font-size: 15px;
-  align: center;
-  padding: 5px 15px;
+@media (min-width: 769px) {
+  body {
+    font-size: 16px;
+  }
 }
 
-ul {
-  background-color: #1688c7
-  list-style-type: none;
-  margin: 0;
-  padding: 8px;
+
+
+.ghiblinav {
+  background-color: #405430ff;
   overflow: hidden;
 }
 
-li {
+.ghiblinav a {
   float: left;
-}
-
-li a {
-  border: 1px #1688c7;
-  border-radius: 5px;
-  display: block;
-  color: white;
-  font-family: Poppins;
-  font-size: 15px;
-  background-color: #1688c7;
+  color: #e5ebecff;
   text-align: center;
-  padding: 8px;
+  padding: 1% 2%;
   text-decoration: none;
+  font-size: 100%;
+  font-family: 'Gabarito', sans-serif;
 }
 
-li a:hover {
-  background-color: Navy;
+.ghiblinav img {
+  padding:none;
+  width:15%;
+  height:15%
+}
+
+
+.ghiblinav a:hover {
+  background-color: #547856ff;
+  color: #e5ebecff;
+}
+
+
+.ghiblinav a.active {
+  background-color: #547856ff;
+  color: #e5ebecff;
+}
+
+div.gallery {
+  margin: 5px;
+  border: none;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #405430ff;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.imageright {
+  float:right;
+  clear: both;
+  vertical-align:baseline;
+}
+
+div.imageleft {
+  float:left;
+  clear:both;
+  vertical-align: middle;
+}
+
+.intro img {
+  width:100%;
+  height: 50%;
+}
+
+.container {
+  display: flex;
+}
+
+.left-content h2{
+  flex: 1; 
+  margin-left: 10%;
+  float:left;
+}
+
+.left-content img{
+  flex: 1; 
+  float: left;
+  clear:both;
+  justify-content: center;
+}
+
+.left-content p{
+  font-size: 30px;
+  text-decoration: solid;
+  font-family:"Gabarito", serif;
+  max-width:auto;
+  margin-left: 10%;
+}
+
+.left-content ol{
+  font-size: 30px;
+  text-decoration: solid;
+  font-family:"Gabarito", serif;
+}
+
+.right-content img {
+  flex: 1;
+  float:right;
+  clear:both;
+  justify-content: center;
+}
+
+.right-content p{
+  font-size: 30px;
+  text-decoration: solid;
+  font-family:"Gabarito", serif;
+  max-width: auto;
+  margin-left: 50%;
+}
+
+.right-content ul{
+  font-size: 30px;
+  text-decoration: solid;
+  font-family:"Gabarito", serif;
+  max-width:auto;
+  margin-left: 50%;
+}
+
+div.relative {
+  position: relative;
+  left: auto;
+  right:auto;
+}
+
+div.sticky {
+  position:sticky;
+  top:0
 }
